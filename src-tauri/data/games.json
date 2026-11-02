@@ -1,0 +1,63 @@
+[
+  {
+    "id": "valorant",
+    "name": "VALORANT",
+    "yaw": 0.07,
+    "sens": { "min": 0.001, "max": 10.0, "decimals": 3, "default": 0.4 },
+    "fov": { "type": "horizontal", "baseAspect": [16, 9], "scaling": "fixedHorizontal", "default": 103.0, "min": 103.0, "max": 103.0, "editable": false },
+    "verified": { "yaw": true, "sensRange": false, "fov": true },
+    "notes": "FOV fijo de 103° horizontal. La sensibilidad se guarda en la nube de Riot."
+  },
+  {
+    "id": "doom-eternal",
+    "name": "DOOM Eternal",
+    "yaw": 0.022,
+    "sens": { "min": 0.1, "max": 10.0, "decimals": 1, "default": 3.0, "label": "Escalado de la sensibilidad del ratón" },
+    "layout": {
+      "kind": "scaledXY",
+      "reference": 40.0,
+      "axis": { "min": 1.0, "max": 100.0, "decimals": 0, "default": 40.0 }
+    },
+    "fov": { "type": "horizontal", "baseAspect": [16, 9], "scaling": "horPlus", "default": 90.0, "min": 70.0, "max": 130.0, "editable": true },
+    "verified": { "yaw": true, "sensRange": false, "fov": false, "layout": false },
+    "notes": "Ajustes > Controles > Ratón y teclado. El Escalado es la sensibilidad base (yaw 0.022, como Quake/Apex); la horizontal y la vertical son multiplicadores donde 40 = ×1. Con ambas en 40, el Escalado equivale a la sens de CS/Apex. Las opciones de \"Control\" son del mando, no del ratón."
+  },
+  {
+    "id": "cs2",
+    "name": "Counter-Strike 2",
+    "yaw": 0.022,
+    "sens": { "min": 0.01, "max": 8.0, "decimals": 3, "default": 1.27 },
+    "fov": { "type": "horizontal", "baseAspect": [4, 3], "scaling": "horPlus", "default": 90.0, "min": 90.0, "max": 90.0, "editable": false },
+    "verified": { "yaw": true, "sensRange": false, "fov": true },
+    "notes": "FOV fijo: 90° horizontal en 4:3 (≈106.26° en 16:9). Por consola: sensitivity <valor>. Desactiva m_rawinput si existiera aceleración."
+  },
+  {
+    "id": "apex",
+    "name": "Apex Legends",
+    "yaw": 0.022,
+    "sens": { "min": 0.2, "max": 20.0, "decimals": 2, "default": 1.27 },
+    "fov": { "type": "horizontal", "baseAspect": [4, 3], "scaling": "horPlus", "default": 90.0, "min": 70.0, "max": 110.0, "editable": true },
+    "verified": { "yaw": true, "sensRange": false, "fov": false },
+    "notes": "El FOV del menú se mide en 4:3 (110 ≈ 120.6° en 16:9). El menú muestra 1 decimal; settings.cfg (mouse_sensitivity) acepta más."
+  },
+  {
+    "id": "overwatch-2",
+    "name": "Overwatch 2",
+    "yaw": 0.0066,
+    "sens": { "min": 1.0, "max": 100.0, "decimals": 2, "default": 13.33 },
+    "fov": { "type": "horizontal", "baseAspect": [16, 9], "scaling": "fixedHorizontal", "default": 103.0, "min": 80.0, "max": 103.0, "editable": true },
+    "verified": { "yaw": true, "sensRange": false, "fov": false },
+    "notes": "Sensibilidad en Opciones > Controles > General. El FOV horizontal se mantiene en cualquier aspect ratio."
+  },
+  {
+    "id": "fortnite",
+    "name": "Fortnite",
+    "yaw": 0.005555,
+    "unit": "%",
+    "sens": { "min": 0.1, "max": 100.0, "decimals": 1, "default": 5.0, "label": "Sensibilidad X del ratón" },
+    "layout": { "kind": "separateXY" },
+    "fov": { "type": "horizontal", "baseAspect": [16, 9], "scaling": "horPlus", "default": 80.0, "min": 80.0, "max": 80.0, "editable": false },
+    "verified": { "yaw": true, "sensRange": false, "fov": false },
+    "notes": "El menú usa porcentaje con 1 decimal; para más precisión edita MouseX_Sensitivity/MouseY_Sensitivity en %LOCALAPPDATA%\\FortniteGame\\Saved\\Config\\WindowsClient\\GameUserSettings.ini (valor del menú ÷ 100). Cámara en tercera persona: usa Distancia 360°."
+  }
+]
